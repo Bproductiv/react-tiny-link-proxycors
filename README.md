@@ -1,4 +1,4 @@
-# React-Tiny-Link
+# Based on React-Tiny-Link
 
 > Convert your links into beautiful previews
 
@@ -12,7 +12,8 @@ Yet anotherReact link preview component with cards for web without a specific ba
 
 ## CORS enabled?
 
-No. You may need a `CORS` proxy to use this component. But if you dont have one, we made the component to use https://cors-anywhere.herokuapp.com as default proxy. Thanks to [Rob](https://github.com/Rob--W). [It](https://cors-anywhere.herokuapp.com) saves my time for accessing urls.
+No. You may need a `CORS` proxy to use this component. 
+Changing complete URL to use this proxy : https://corsproxy.io/
 
 ## Installation
 
@@ -88,7 +89,7 @@ const ReactTinyLink = dynamic(
 | PropName          | Description                                               | PropType                        | value                                          | required |
 | ----------------- | --------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | -------- |
 | **url**           | URL to be display as preview                              | string                          |                                                | `true`   |
-| **proxyUrl**      | Proxy URL to pass that resolve CORS                       | string                          | default(`https://cors-anywhere.herokuapp.com`) | `false`  |
+| **proxyUrl**      | Proxy URL to pass that resolve CORS                       | string                          | default(`https://corsproxy.io/`) | `false`  |
 | **defaultMedias** | Default value to provide the media for failure cases      | string[]                        | N.A                                            | `false`  |
 | **defaultValue**  | Default response to provide for failure cases             | IReactTinyLinkData              | N.A                                            | `false`  |
 | **noCache**       | Disables cache of link result                             | boolean                         | default(`false`)                               | `false`  |
